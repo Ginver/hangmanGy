@@ -38,9 +38,9 @@ Je kan het programma stoppen door:
 - [ ] Implementeer de game logica (laat de tests je helpen: `npm run test:watch`)
 - [ ] Is de game logica geimplementeerd? Gebruik de functies dan in index.js
   - [ ] Zorg dat mensen letters kunnen raden
-  - [ ] Hou bij in de guesses array welke letters mensen geraden hebben
-  - [ ] Laat zien welke letters al geraden zijn met (displayWordSoFar)
-  - [ ] Heeft iemand alle letters geraden? log dan dat ze gewonnen hebben
+  - [x] Hou bij in de guesses array welke letters mensen geraden hebben
+  - [x] Laat zien welke letters al geraden zijn met (displayWordSoFar)
+  - [x] Heeft iemand alle letters geraden? log dan dat ze gewonnen hebben
   - [ ] Heeft iemand meer 6 letters fout geraden? log dan hebben ze verloren
   - [ ] Stop het programma met `return` wanneer iemand gewonnen of verloren heeft
   - [ ] Heeft iemand nog niet gewonnen of verloren? Dan gaat het spel verder

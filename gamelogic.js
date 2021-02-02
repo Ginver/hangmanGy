@@ -39,31 +39,30 @@ function displayWordSoFar(word, guesses) {
 
 function isGameWon(word, guesses) {
   // WRITE ME
-  const letterArray = word.split("");
-  for (let index = 0; index < letterArray.length; index++) {
-    const letterInWord = letterArray[index];
+  const letterArray2 = word.split("");
+  for (let index = 0; index < letterArray2.length; index++) {
+    const letterInWord = letterArray2[index];
     const letterGuessed = guesses.includes(letterInWord);
     if (!letterGuessed) {
       return false;
     }
-  }
-  return true;
+    return true;
 
 // DOEL: isGameWon
-  // word = "javascript" guesses = ["j", "a", "v", "s", "c", "r", "i", "p", "t"] -> true
-  // word = "javascript" guesses = [], ["j", "a"] -> false
-  // Strategie:
-  // Kunnen we 1 letter vinden die je niet hebt geraden? return false
-  // Kunnen niet 1 letter vinden die je niet hebt geraden return true
-  // - [ ] loggen: wat is word & guesses
-  // - [ ] word -> word.split(""): ["j", "a", "v","a", "s", "c", "r", "i", "p", "t"]
-  // - [ ] loopen over dat array met de letters van het woord
-  // - [ ] Voor elke letter in het woord
-  // - [ ] Zit deze letter in guesses -> guesses.includes(letter)
-  // - [ ] if in de loop
-  // - [ ] in guesses true -> we gaan door
-  // - [ ] in guesses false -> we stoppen: return false
-  // - [ ] Zijn we aan het einde van de loop? aan het einde van de functie return true
+    // word = "javascript" guesses = ["j", "a", "v", "s", "c", "r", "i", "p", "t"] -> true
+    // word = "javascript" guesses = [], ["j", "a"] -> false
+    // Strategie:
+    // Kunnen we 1 letter vinden die je niet hebt geraden? return false
+    // Kunnen niet 1 letter vinden die je niet hebt geraden return true
+    // - [ ] loggen: wat is word & guesses
+    // - [ ] word -> word.split(""): ["j", "a", "v","a", "s", "c", "r", "i", "p", "t"]
+    // - [ ] loopen over dat array met de letters van het woord
+    // - [ ] Voor elke letter in het woord
+    // - [ ] Zit deze letter in guesses -> guesses.includes(letter)
+    // - [ ] if in de loop
+    // - [ ] in guesses true -> we gaan door
+    // - [ ] in guesses false -> we stoppen: return false
+    // - [ ] Zijn we aan het einde van de loop? aan het einde van de functie return true
 
 
 }; // eind isGameWon
@@ -106,14 +105,8 @@ function isGameLost(word, guesses) {
   // - [ ] count is minder dan 7 -> return false
 
 }; // eind isGameLost
-
-
-
-
-
-
-module.exports = {
-  displayWordSoFar: displayWordSoFar,
-  isGameWon: isGameWon,
-  isGameLost: isGameLost,
-};
+  module.exports = {
+    displayWordSoFar: displayWordSoFar,
+    isGameWon: isGameWon,
+    isGameLost: isGameLost,
+  },

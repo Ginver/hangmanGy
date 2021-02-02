@@ -79,12 +79,7 @@ function isGameLost(word, guesses) {
     }
   }
 
-  const MAX_MISTAKE_COUNT = 7;
-  if (mistakeCount >= MAX_MISTAKE_COUNT) {
-    return true;
-  } else {
-    return false;
-  }
+
   // DOEL: isGameLost
   // word = "javascript" guesses = ["q", "w", "e", "y", "u", "o", "d"]; -> true
   // word = "javascript" guesses = ["q", "w", "e", "a", "t"]; -> false

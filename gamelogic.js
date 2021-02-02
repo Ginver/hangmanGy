@@ -6,7 +6,8 @@ function displayWordSoFar(word, guesses) {
 
 // - [x] javascript, ['a', 'b', etc.] -> "- - - - - - - - - - " // output guesses
 // - [x] javascript "splitten" split() -> ['j', 'a', 'v', 'a', 's', 'c', 'r', 'i', 'p', 't'] // geen woord meer, onafhankelijke karakters, kan je in index doen
-
+  const letterArray = word.split("");
+  console.log("LETTERS IN WOORD:", letterArray);
 
 // - [x] een loop maken (over de array heen) -> ['j', 'a', 'v', 'a', 's', 'c', 'r', 'i', 'p', 't']
   let output = '';
